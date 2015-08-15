@@ -20,6 +20,7 @@ backup_group: "{{backup_user}}"
 
 backup_home: /etc/duply         # Backup configuration directory
 backup_work: /var/duply         # Working directory
+backup_cron_file: backup        # Cron file name to be placed in /etc/cron.d/
 
 backup_duplicity_ppa: ppa:duplicity-team/ppa  # Set empty for skipping PPA addition
 backup_duplicity_pkg: duplicity
@@ -32,6 +33,7 @@ backup_logrotate: yes           # Setup logs rotation
 # Posgresql
 backup_postgres_user: postgres
 backup_postgres_host: ""
+backup_postgres_pass: ""
 
 # Mysql
 backup_mysql_user: mysql
